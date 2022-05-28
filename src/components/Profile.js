@@ -14,8 +14,7 @@ export default function Profile() {
   const [mode, setMode] = useState(SUMMARY);
 
   return (
-    <div className="profile d-flex justify-content-center vertical-center">
-
+    <div id="profile" className="profile d-flex justify-content-center vertical-center">
       <div className="profile-picture">
         <img src={picture} alt="profile-pic"></img>
       </div>

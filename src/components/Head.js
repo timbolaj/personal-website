@@ -4,8 +4,13 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Head() {
+
+  const scrollToProfile = () => {
+    document.getElementById('profile').scrollIntoView({ behavior: "smooth" });
+  }
 
   return (
     <div className="Head">
@@ -17,16 +22,17 @@ export default function Head() {
 
       <div className="Introduction-text">
         <div className="name">
-          <p>Hi, I'm Aaron.</p>
+          <p>Aaron Timbol</p>
         </div>
 
-        <div className="description">
-          <p>I'm a political science graduate turned software developer.</p>
-          <p>Thanks for stopping by</p>
-          <p>I love languages, both human and computer.</p>
+        <div className="description"> 
+          <p>Digital Nomad</p>
+          <p>Agile Enthusiast</p>
+          <p>Software Developer</p>
         </div>
       </div>
 
+      <span onClick={() => scrollToProfile()}><FontAwesomeIcon icon={faCircleArrowDown} size="3x" className="arrow-down -initial"/></span>
     </div>
   )
 }

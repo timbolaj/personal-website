@@ -50,10 +50,10 @@ export default function Skills() {
 
         <div className="soft-skills">
           <h5>Soft-Skills</h5>
-          <p>Agile methodologies</p>
-          <p>Pair programming</p>
-          <p>Team-player</p>
-          <p>Trilingual (English, French, Spanish)</p>
+          <p>Agile scrum</p>
+          <p>Teamwork</p>
+          <p>Communication</p>
+          <p>Fluent in English, French and Spanish</p>
         </div>
       </div>
     

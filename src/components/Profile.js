@@ -6,6 +6,7 @@ import Summary from './Profile-components/Summary';
 import Skills from './Profile-components/Skills';
 import Resume from './Profile-components/Resume';
 import Button from '@material-ui/core/Button';
+import DownButton from './DownButton';
 
 const SUMMARY = 'Summary';
 const SKILLS = 'Skills';
@@ -17,55 +18,59 @@ export default function Profile() {
 
   return (
     <div id="profile" className="profile d-flex justify-content-center vertical-center">
-      <div className="profile-picture">
-        <img src={picture} alt="profile-pic"></img>
-      </div>
-
-      <br></br>
-
-      <div className={"info-container " + (mode === RESUME ? 'resume-mode' : '')}>
-
-        <div className="profile-components">
-          {mode === SUMMARY && <Summary />}
-          {mode === SKILLS && <Skills />}
-          {mode === RESUME && <Resume />}
+      <div className="content-container">
+        <div className="profile-picture">
+          <img src={picture} alt="profile-pic"></img>
         </div>
-   
-        <div className="modes">
-          <Button
-            variant="contained"
-            color="secondary"
-            className="summary"
-            onClick={() => setMode(SUMMARY)}
-          >
-            Summary
-          </Button>
 
-          &nbsp;
+        <br></br>
 
-          <Button
-            variant="contained"
-            color="secondary"
-            className="skills"
-            onClick={() => setMode(SKILLS)}
-          >
-              Skills
-          </Button>
-            
-          &nbsp;
+        <div className={"info-container " + (mode === RESUME ? 'resume-mode' : '')}>
 
-          <Button
+          <div className="profile-components">
+            {mode === SUMMARY && <Summary />}
+            {mode === SKILLS && <Skills />}
+            {mode === RESUME && <Resume />}
+          </div>
+    
+          <div className="modes">
+            <Button
               variant="contained"
               color="secondary"
-              className="resume"
-              onClick={() => setMode(RESUME)}
-
+              className="summary"
+              onClick={() => setMode(SUMMARY)}
             >
-              Resume
-          </Button>
+              Summary
+            </Button>
+
+            &nbsp;
+
+            <Button
+              variant="contained"
+              color="secondary"
+              className="skills"
+              onClick={() => setMode(SKILLS)}
+            >
+                Skills
+            </Button>
               
-        </div>
+            &nbsp;
+
+            <Button
+                variant="contained"
+                color="secondary"
+                className="resume"
+                onClick={() => setMode(RESUME)}
+
+              >
+                Resume
+            </Button>
+                
+          </div>
+        </div>        
       </div>
+
+      <DownButton pageTag={'profile'} />
     </div>
   )
 }

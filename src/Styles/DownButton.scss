@@ -1,0 +1,24 @@
+span .arrow-down {
+  opacity: 0;
+}
+
+span .arrow-down {
+  display: flex;
+  color: white;
+  animation-name: blinking-arrow;
+  animation-duration: 1.75s;
+  animation-iteration-count: infinite;
+  animation-delay: 4s;
+}
+
+.arrow-down {
+  color: white;
+}
+
+@keyframes blinking-arrow {
+  0% {opacity: 0;}
+  25% {opacity: 0.25;}
+  50% {opacity: 0.5;}
+  75% {opacity: 0.65;}
+  100% {opacity: 1;}
+}

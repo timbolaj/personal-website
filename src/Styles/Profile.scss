@@ -1,6 +1,18 @@
 .profile {
   height: 100vh;
-  padding-top: 2em;
+  padding-top: 1.5rem;
+  flex-direction: column;
+
+  .content-container {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+  }
+
+  .arrow-down {
+    color: #a68500;
+    margin-bottom: 1.25rem;
+  }
 }
 
 .profile-picture {
@@ -14,7 +26,6 @@
 }
 
 .info-container {
-  padding: 0 0 2rem 0;
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
@@ -29,10 +40,6 @@
   display: flex;
   justify-content: center;
   align-content: flex-end;
-}
-
-.arrow-down {
-  color: white;
 }
 
 @media only screen and (min-width: 500px) {

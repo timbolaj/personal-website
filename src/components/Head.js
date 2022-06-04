@@ -3,6 +3,8 @@ import '../Styles/Head.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import DownButton from './DownButton';
 
 export default function Head() {
@@ -26,7 +28,7 @@ export default function Head() {
         </div>
       </div>
 
-      <DownButton pageTag={'profile'} />
+      <DownButton className="down-button" pageTag={'profile'} />
     </div>
   )
 }

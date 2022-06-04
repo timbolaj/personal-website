@@ -3,6 +3,10 @@
   height: 100vh;
   background-color: #a68500;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+
+  .down-button {
+    padding-top: 1.25rem;
+  }
 }
 
 .links {
@@ -30,8 +34,7 @@
 .Introduction-text {
   display: flex;
   flex-direction: column;
-  padding-left: 7rem;
-  padding-top: 7rem;
+  padding: 7rem 7rem 10rem 7rem;
   font-family: 'Archivo', sans-serif;
   font-size: 3em;
 
@@ -85,31 +88,9 @@ span {
   justify-content: center;
 }
 
-span .arrow-down {
-  opacity: 0;
-}
-
-span .arrow-down {
-  display: flex;
-  color: white;
-  margin-top: 10rem;
-  animation-name: blinking-arrow;
-  animation-duration: 1.75s;
-  animation-iteration-count: infinite;
-  animation-delay: 4s;
-}
-
 @keyframes fade-in-text {
   0% {opacity: 0;}
   90% {opacity: 0}
   95% {opacity: 0.5;}
-  100% {opacity: 1;}
-}
-
-@keyframes blinking-arrow {
-  0% {opacity: 0;}
-  25% {opacity: 0.25;}
-  50% {opacity: 0.5;}
-  75% {opacity: 0.65;}
   100% {opacity: 1;}
 }

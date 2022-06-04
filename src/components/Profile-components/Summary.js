@@ -7,11 +7,10 @@ export default function Summary() {
       <h4>About Me</h4>
       <br></br>
       <p>I graduated from the University of Toronto in 2018 majoring in Political Science with minors in Spanish and Philosophy.</p>
-      <p>In 2019, I began working for a non-profit organization in Québec City called l'Arche Étoile, caring for persons with special needs.</p>
-      <p>I rediscovered programming through the Intro to JavaScript course on Codecademy and was hooked.</p>
+      <p>I discovered programming through the Intro to JavaScript course on Codecademy and was hooked.</p>
       <p>Shortly thereafter, I discovered Lighthouse Labs and their Full-Stack Web Development Bootcamp.</p>
       <p>I enrolled and graduated from the bootcamp in July 2020.</p>
-      <p>In August 2020, I started working at Petal Solutions, a software company based in Quebec City that provides technical solution in the healthcare industry</p>
+      <p>In August 2020, I started working at Petal Solutions, a software company based in Quebec City that provides technical solutions in the healthcare industry.</p>
     </div>
   )
 }

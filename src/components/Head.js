@@ -3,15 +3,9 @@ import '../Styles/Head.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowDown } from "@fortawesome/free-solid-svg-icons";
+import DownButton from './DownButton';
 
 export default function Head() {
-
-  const scrollToProfile = () => {
-    document.getElementById('profile').scrollIntoView({ behavior: "smooth" });
-  }
-
   return (
     <div className="Head">
       <div className="links col-sm">
@@ -32,7 +26,7 @@ export default function Head() {
         </div>
       </div>
 
-      <span onClick={() => scrollToProfile()}><FontAwesomeIcon icon={faCircleArrowDown} size="3x" className="arrow-down -initial"/></span>
+      <DownButton pageTag={'profile'} />
     </div>
   )
 }

@@ -1,14 +1,18 @@
+.skills {
+  padding-bottom: 1.25rem;
+}
+
 .upper-half, .bottom-half {
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 4em;
+  padding-bottom: 1rem;
 }
 
 .bottom-half {
   padding-bottom: 0em;
 }
 
-.front-end, .back-end, .testing, .programming-languages, .soft-skills, .acquiring {
+.front-end, .back-end, .testing, .programming-languages, .soft-skills {
   line-height: 0.5;
 }
 

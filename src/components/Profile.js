@@ -4,10 +4,12 @@ import '../Styles/Profile.scss';
 import 'bootstrap/dist/css/bootstrap.css';
 import Summary from './Profile-components/Summary';
 import Skills from './Profile-components/Skills';
+import Resume from './Profile-components/Resume';
 import Button from '@material-ui/core/Button';
 
 const SUMMARY = 'Summary';
 const SKILLS = 'Skills';
+const RESUME = 'Resume';
 
 export default function Profile() {
 
@@ -21,11 +23,13 @@ export default function Profile() {
 
       <br></br>
 
-      <div className="jumbotron">
+      <div className={"info-container " + (mode === RESUME ? 'resume-mode' : '')}>
 
         <div className="profile-components">
           {mode === SUMMARY && <Summary />}
-          {mode === SKILLS && <Skills /> }
+          {mode === SKILLS && <Skills />}
+          {mode === RESUME && <Resume />}
+        </div>
    
         <div className="modes">
           <Button
@@ -45,14 +49,23 @@ export default function Profile() {
             className="skills"
             onClick={() => setMode(SKILLS)}
           >
-            Skills
+              Skills
           </Button>
+            
+          &nbsp;
 
-          </div>
+          <Button
+              variant="contained"
+              color="secondary"
+              className="resume"
+              onClick={() => setMode(RESUME)}
+
+            >
+              Resume
+          </Button>
+              
         </div>
-
       </div>
-
     </div>
   )
 }

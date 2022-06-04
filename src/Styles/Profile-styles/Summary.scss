@@ -1,5 +1,9 @@
 .Summary {
-  padding: 0;
+  padding: 0 0 1.25rem;
+}
+
+.profile-components .Summary p:nth-child(5) {
+  margin-bottom: 0rem;
 }
 
 .Summary h4 {
@@ -21,4 +25,4 @@
 @keyframes text {
   0% {opacity: 0;}
   100% {opacity: 100;}
-}
+}  

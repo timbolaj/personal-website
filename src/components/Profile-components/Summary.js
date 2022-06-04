@@ -11,6 +11,7 @@ export default function Summary() {
       <p>I rediscovered programming through the Intro to JavaScript course on Codecademy and was hooked.</p>
       <p>Shortly thereafter, I discovered Lighthouse Labs and their Full-Stack Web Development Bootcamp.</p>
       <p>I enrolled and graduated from the bootcamp in July 2020.</p>
+      <p>In August 2020, I started working at Petal Solutions, a software company based in Quebec City that provides technical solution in the healthcare industry</p>
     </div>
   )
 }

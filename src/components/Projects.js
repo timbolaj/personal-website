@@ -19,7 +19,7 @@ export default function Projects() {
   const [projectMode, setProject] = useState(PATHFINDER)
 
   return (
-    <div className="Projects">
+    <div id="projects" className="Projects">
       <div className="projects-text">
         <h4>Projects:</h4>
         &nbsp;

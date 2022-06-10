@@ -1,5 +1,5 @@
 .profile {
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 1.5rem;
   flex-direction: column;
 
@@ -17,10 +17,11 @@
 
 .profile-picture {
   display: none;
+  margin-right: 3rem; 
 }
 
 .profile-components {
-  height: 77%;
+  height: 36.3rem;
   padding: 1rem;
   border: solid;
 }
@@ -28,8 +29,8 @@
 .info-container {
   display: flex;
   flex-direction: column;
-  margin-left: 3rem;
-  width: 40%;
+  width: 80%;
+  margin-left: 0rem;
 }
 
 .jumbotron.resume-mode {
@@ -38,48 +39,103 @@
 
 .modes {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: flex-end;
+  padding-top: 1rem;
 
   a {
     color: #fff;
+  }
+
+  button {
+    margin-bottom: 0.25rem;
+  }
+
+  .nbsp {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 471px) {
+  .modes {
+    flex-direction: row;
+  
+    .nbsp {
+      display: initial;
+    }
   }
 }
 
 @media only screen and (min-width: 500px) {
   .modes {
-    padding-top: 3em;
+    padding-top: 1rem;
   }
 }
 
-@media only screen and (min-width:1110px) {
-  .profile {
-    display: default;
+@media only screen and (min-width: 520px) {
+  .info-container {
+    height: auto;
   }
 }
 
-@media only screen and (min-width:820px) {
-  .jumbotron {
-    width: 40%;
+@media only screen and (min-width: 600px) {
+  .class-separator {
+    display: none;
   }
 
-  .modes {
-    padding-top: 0em;
+  .Summary p {
+    font-size: 0.93rem;
   }
+}
 
+@media only screen and (min-width: 700px) {
+  .info-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 815px) {
   .profile-picture {
     display: block;
   }
-}
 
-@media only screen and (min-width:1222px) {
-  .modes {
-    padding-top: 2em;
+  .info-container {
+    width: 50%;
   }
 }
 
-@media only screen and (min-height:632px) {
-  .jumbotron {
-    height: 80%
+@media only screen and (min-width: 1050px) {
+  .profile-components {
+    padding: 1rem;
+    border: solid;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .info-container {
+    width: 40%;
+  }
+}
+
+//Full screen
+@media only screen and (min-width: 1215px) {
+  .profile {
+    height: 100vh;
+    padding-top: 1.5rem;
+  
+    .arrow-down {
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .profile-components {
+    height: 77%;
+    padding: 1rem;
+  }
+  
+  .info-container {
+    display: flex;
+    flex-direction: column;
   }
 }

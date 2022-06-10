@@ -5,7 +5,9 @@
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 
   .down-button {
-    padding-top: 1.25rem;
+    bottom: 5%;
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -32,11 +34,9 @@
 }
 
 .Introduction-text {
-  display: flex;
-  flex-direction: column;
-  padding: 7rem 7rem 10rem 7rem;
+  padding: 5rem 0 40vh 2.25rem;
+  font-size: 1.75rem;
   font-family: 'Archivo', sans-serif;
-  font-size: 3em;
 
   p {
     margin-bottom: 0;
@@ -93,4 +93,13 @@ span {
   90% {opacity: 0}
   95% {opacity: 0.5;}
   100% {opacity: 1;}
+}
+
+@media only screen and (min-width: 768px) {
+  .Introduction-text {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 7rem 10rem 7rem;
+    font-size: 3em;
+  }
 }

@@ -12,7 +12,16 @@
   padding-bottom: 0em;
 }
 
-.front-end, .back-end, .testing, .programming-languages, .soft-skills {
+.testing,
+.soft-skills .languages {
+  display: none;
+}
+
+.front-end,
+.back-end,
+.testing,
+.programming-languages,
+.soft-skills {
   line-height: 0.5;
 }
 
@@ -35,4 +44,11 @@ h5 {
 @keyframes skills-text {
   0% {opacity: 0;}
   100% {opacity: 100;}
+}
+
+@media only screen and (min-width: 515px ) {
+  .testing,
+  .soft-skills .languages {
+    display: block;
+  }
 }

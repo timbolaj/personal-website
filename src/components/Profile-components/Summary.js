@@ -5,7 +5,7 @@ export default function Summary() {
   return (
     <div className='Summary'>
       <h4>About Me</h4>
-      <br></br>
+      <br className='break'></br>
       <p>I graduated from the University of Toronto in 2018 majoring in Political Science with minors in Spanish and Philosophy.</p>
       <p>I discovered programming through the Intro to JavaScript course on Codecademy and was hooked.</p>
       <p>Shortly thereafter, I discovered Lighthouse Labs and their Full-Stack Web Development Bootcamp.</p>

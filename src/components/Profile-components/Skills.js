@@ -7,7 +7,7 @@ export default function Skills() {
     <div className="skills">
       <div className='upper-half'>
         <div className="front-end">
-          <h5>Front-End</h5>
+          <h5>Frontend</h5>
           <p>Angular</p>
           <p>React</p>
           <p>RxJS</p>
@@ -20,7 +20,7 @@ export default function Skills() {
         </div>
 
         <div className="back-end">
-          <h5>Back-End</h5>
+          <h5>Backend</h5>
           <p>Rails</p>
           <p>NodeJS</p>
           <p>Express</p>
@@ -53,7 +53,7 @@ export default function Skills() {
           <p>Agile scrum</p>
           <p>Teamwork</p>
           <p>Communication</p>
-          <p>Fluent in English, French and Spanish</p>
+          <p className="languages">Fluent in English, French and Spanish</p>
         </div>
       </div>
     

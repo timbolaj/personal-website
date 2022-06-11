@@ -36,7 +36,6 @@ export default function Profile() {
           <div className="modes">
             <Button
               variant="contained"
-              color="secondary"
               onClick={() => setMode(SUMMARY)}
             >
               Summary
@@ -46,7 +45,6 @@ export default function Profile() {
 
             <Button
               variant="contained"
-              color="secondary"
               onClick={() => setMode(SKILLS)}
             >
                 Skills
@@ -56,7 +54,6 @@ export default function Profile() {
 
             <Button
               variant="contained"
-              color="secondary"
               onClick={() => setMode(PROFESSIONALPROJECTS)}
             >
               Professional Projects
@@ -66,7 +63,6 @@ export default function Profile() {
 
             <Button
                 variant="contained"
-                color="secondary"
               >
                 <a href="https://resume.creddle.io/resume/1g0nfcz2ism" target="_blank" rel="noreferrer noopener">Resume</a>
             </Button>

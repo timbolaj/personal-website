@@ -50,6 +50,13 @@
 
   button {
     margin-bottom: 0.25rem;
+    background-color: #a68500;
+    color: #fff;
+
+    &:hover {
+      border: solid black;
+      background-color: #a68500;
+    }
   }
 
   .nbsp {

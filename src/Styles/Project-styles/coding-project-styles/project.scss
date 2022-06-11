@@ -1,5 +1,5 @@
 .project {
-  width: 60%;
+  width: 80%;
   display: flex;
   text-align: justify;
   flex-direction: column;
@@ -14,4 +14,11 @@
 
 .project-img {
   width: 100%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .project {
+    width: 60%;
+  }
 }

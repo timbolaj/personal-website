@@ -31,6 +31,8 @@ export default function Projects() {
         {projectMode === POKEDEX && <h4>Pokédex</h4>}
       </div>
 
+      &nbsp;
+
       <div className="websites">
         {projectMode === PATHFINDER && <Pathfinder />}
         {projectMode === MAPBOOK && <Mapbook />}

@@ -6,6 +6,10 @@ export default function ProProjects() {
     <div className="proProjects">
       <h2>Professional Projects</h2>
       <div>
+        <h4>Petal Solutions General Scheduling App: August 2020 - September 2020</h4>
+        <p>Added features and solved bugs on the company's flagship web application.</p>
+      </div>
+      <div>
         <h4>Province-wide Scheduling Hub: September 2020 - Current</h4>
         <p>Implemented new api endpoints, ActiveRecord Models and user interfaces for a province-wide scheduling platform.</p>
       </div>

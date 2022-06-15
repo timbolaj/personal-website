@@ -28,7 +28,9 @@ export default function Head() {
         </div>
       </div>
 
-      <DownButton className="down-button" pageTag={'profile'} />
+      <div className="down-button">
+        <DownButton pageTag={'profile'} />
+      </div>
     </div>
   )
 }

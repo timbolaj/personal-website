@@ -5,6 +5,7 @@
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 
   .down-button {
+    display: none;
     bottom: 5%;
     position: absolute;
     width: 100%;
@@ -101,5 +102,13 @@ span {
     flex-direction: column;
     padding: 7rem 7rem 10rem 7rem;
     font-size: 3em;
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  .Head {
+    .down-button {
+      display: block;
+    }    
   }
 }

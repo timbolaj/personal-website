@@ -1,6 +1,6 @@
 .Head {
   margin: 0px;
-  height: 100vh;
+  height: fit-content;
   background-color: #a68500;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 
@@ -107,6 +107,8 @@ span {
 
 @media only screen and (min-height: 600px) {
   .Head {
+    height: 100vh;
+
     .down-button {
       display: block;
     }    

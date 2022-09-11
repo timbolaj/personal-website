@@ -4,6 +4,16 @@
   .break {
     display: none;
   }
+
+  ul {
+    text-align: left;
+    animation-name: text;
+    animation-duration: 2s;
+  }
+
+  .supplementary {
+    display: none;
+  }
 }
 
 .Summary h4 {
@@ -29,6 +39,12 @@
 
 @media only screen and (min-width: 528px) {
   .Summary .break {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 471px) {
+  .Summary .supplementary {
     display: block;
   }
 }

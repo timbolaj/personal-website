@@ -6,11 +6,18 @@ export default function Summary() {
     <div className='Summary'>
       <h4>About Me</h4>
       <br className='break'></br>
-      <p>I graduated from the University of Toronto in 2018 majoring in Political Science with minors in Spanish and Philosophy.</p>
-      <p>I discovered programming through the Intro to JavaScript course on Codecademy and was hooked.</p>
-      <p>Shortly thereafter, I discovered Lighthouse Labs and their Full-Stack Web Development Bootcamp.</p>
-      <p>I enrolled and graduated from the bootcamp in July 2020.</p>
-      <p>In August 2020, I started working at Petal Solutions, a software company based in Quebec City that provides technical solutions in the healthcare industry.</p>
+      <p>I am a full-stack web developer specializing in Angular, Ruby on Rails and React.</p>
+      <p>My professional experience to date has included the following:</p>
+      <ul>
+        <li>Architecting and realization of front-end components</li>
+        <li>Implementation of mock-ups using Zeplin and Figma</li>
+        <li>Creation and maintenance of api endpoints and database/model-related operations</li>
+        <li>Unit testing of both back-end and front-end code</li>
+      </ul>
+      <div className='supplementary'>
+        <p>Since 2021, I have embraced a semi-nomadic lifestyle, often travelling and working to and from both hemispheres.</p>
+      </div>
+        <p>I am also multilingual and can communicate with colleagues in English, French and Spanish.</p>        
     </div>
   )
 }

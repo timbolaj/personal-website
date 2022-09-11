@@ -6,7 +6,7 @@ export default function Summary() {
     <div className='Summary'>
       <h4>About Me</h4>
       <br className='break'></br>
-      <p>I am a full-stack web developer specializing in Angular, Rails and React.</p>
+      <p>I am a full-stack web developer specializing in Angular, Ruby on Rails and React.</p>
       <p>My professional experience to date has included the following:</p>
       <ul>
         <li>Architecting and realization of front-end components</li>
